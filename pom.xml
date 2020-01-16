@@ -63,6 +63,7 @@
     </dependencies>
 
     <build>
+        <finalName>login-tutorial</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
