@@ -52,6 +52,7 @@ public class UserServiceTest {
 
         // Run the test
         final User result = userServiceUnderTest.findUserByEmail(email);
+        //System.out.println(">>Siva result : " + result.getEmail());
 
         // Verify the results
         assertEquals(email, result.getEmail());

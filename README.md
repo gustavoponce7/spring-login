@@ -6,9 +6,10 @@ https://medium.com/@gustavo.ponce.ch/spring-boot-spring-mvc-spring-security-mysq
 
 1. mvn clean install
 2. java -jar target/login-tutorial.jar
+3. java -jar -Dserver.port=9090 target/login-tutorial.jar
 
-- http://localhost:8080/registration
-- http://localhost:8080/login
+- http://localhost:9090/registration
+- http://localhost:9090/login
 
 ### Docker
 - mvn clean install
