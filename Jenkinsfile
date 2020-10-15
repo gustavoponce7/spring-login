@@ -1,13 +1,24 @@
 #!groovy
 
+Jenkinsfile (Declarative Pipeline)
 pipeline {
-    node ("windows") {
+    agent any
+
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                bat 'mvn --version'
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
-}
 }
