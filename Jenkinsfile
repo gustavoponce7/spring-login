@@ -1,4 +1,7 @@
+#!groovy
+
 pipeline {
+    node ("windows") {
     stages {
         stage('build') {
             steps {
@@ -6,4 +9,5 @@ pipeline {
             }
         }
     }
+}
 }
