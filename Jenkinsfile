@@ -12,13 +12,13 @@ pipeline {
 		stage('Build') {
             steps {
                 echo 'Building..'
-				bat mvn clean install
+				bat 'mvn clean install'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-				bat mvn test
+				bat 'mvn test'
             }
         }
         stage('Deploy') {
